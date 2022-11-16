@@ -1,7 +1,10 @@
-body {font-family: monospace;
+* {
+    color: var(--fontcolor);
+    font-family: Helvevica;
 }
 
-ul {font-family: Helvetica;
+body {
+    background: var(--bg)
 }
 
 li {list-style: circle;
@@ -10,5 +13,20 @@ li {list-style: circle;
 .list {list-style: square;
 }
 
-#msg {font-family: monospace;
+.Tema-claro {
+    --bg:var(--green);
+    --fontcolor: var(--black);
 }
+.Tema-escuro {
+    --bg: var(--black);
+    --fontcolor: var(--green);
+}
+
+
+
+:root {
+    --green: #00ff00;
+    --white: #ffffff;
+    --black: #000000;
+}
+
