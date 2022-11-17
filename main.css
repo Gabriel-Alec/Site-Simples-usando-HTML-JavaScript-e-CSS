@@ -16,10 +16,14 @@ li {list-style: circle;
 .Tema-claro {
     --bg:var(--green);
     --fontcolor: var(--black);
+    --btnFontColor: var(--white);
+    --btnbg: var(--black);
 }
 .Tema-escuro {
     --bg: var(--black);
     --fontcolor: var(--green);
+    --btnFontColor: var(--black);
+    --btnbg: var(--white);
 }
 
 
@@ -28,5 +32,20 @@ li {list-style: circle;
     --green: #00ff00;
     --white: #ffffff;
     --black: #000000;
+}
+
+.btn {
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnbg);
+}
+.btn:focus {
+    outline-style: none;
 }
 
